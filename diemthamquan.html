@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="images/logotitle.jpg" type="image/x-icon">
+    <title>Du Lịch Bến Tre - Xứ Dừa</title>
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-leaf me-2"></i>
+                Bến Tre Tourism
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="diemthamquan.html">Điểm Tham Quan Nổi Tiếng</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lichtrinh.html">Lịch Trình</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bando.html">Bản Đồ</a>
+                    </li>
+                  
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Video Giới Thiệu -->
+    <section class="video-section py-5 bg-light mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="video-wrapper animate__animated animate__fadeInLeft">
+                        <iframe width="100%" height="355"
+                            src="https://www.youtube.com/embed/hjEwEMBoVRI?si=kOS1DQcVbS3dTpq_"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-content animate__animated animate__fadeInRight">
+                        <h2 class="section-title">Khám Phá Bến Tre</h2>
+                        <p class="lead">Hãy cùng chúng tôi khám phá vẻ đẹp của Bến Tre qua video giới thiệu dưới đây</p>
+                        <div class="facts-grid mt-4">
+                            <div class="fact-item">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h4>2,360 km²</h4>
+                                <p>Diện tích</p>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fas fa-users"></i>
+                                <h4>1.2M+</h4>
+                                <p>Dân số</p>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fas fa-tree"></i>
+                                <h4>72,000 ha</h4>
+                                <p>Vườn dừa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Điểm Tham Quan -->
+    <section class="destinations-section py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5 animate__animated animate__fadeInUp">Điểm Tham Quan Nổi Bật</h2>
+            <div class="row g-4">
+                <!-- Lan Vương -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq1.jpeg" alt="Lan Vương" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Khu du lịch Lan Vương</h3>
+                            <p>Thiên đường vui chơi giải trí với không gian thoáng đãng, trong lành cùng nhiều hoạt động
+                                đặc trưng miền Tây như chèo xuồng, tát mương bắt cá...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#lanVuongModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Đạo Dừa -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="destination-img">
+                            <img src="images/tq2.jpeg" alt="Đạo Dừa" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Di tích Đạo Dừa</h3>
+                            <p>Di tích lịch sử văn hóa độc đáo với kiến trúc đặc sắc, nơi lưu giữ những nét đẹp tín
+                                ngưỡng của người dân xứ dừa...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#daoDuaModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phú An Khang -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="destination-img">
+                            <img src="images/tq3.jpeg" alt="Phú An Khang" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Khu du lịch Phú An Khang</h3>
+                            <p>Điểm đến lý tưởng cho các hoạt động team building, dã ngoại với không gian rộng 3 hecta
+                                cùng nhiều trải nghiệm thú vị...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#phuAnKhangModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bảo tàng Bến Tre -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq4.jpeg" alt="Bảo tàng Bến Tre" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Bảo tàng Bến Tre</h3>
+                            <p>Công trình kiến trúc Pháp cổ điển, nơi lưu giữ và trưng bày các hiện vật lịch sử cách
+                                mạng quý giá của tỉnh...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#baoTangModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cồn Phụng -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq5.jpeg" alt="Cồn Phụng" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Cồn Phụng</h3>
+                            <p>Khu du lịch sinh thái tiêu biểu với cảnh sắc thiên nhiên trù phú, mang đến trải nghiệm
+                                sông nước miền Tây độc đáo...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#conPhungModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lăng mộ Nguyễn Đình Chiểu -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq6.jpeg" alt="Lăng mộ Nguyễn Đình Chiểu" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Lăng mộ Nguyễn Đình Chiểu</h3>
+                            <p>Di tích lịch sử văn hóa cấp quốc gia, nơi tưởng nhớ danh nhân văn hóa, nhà thơ yêu nước
+                                Nguyễn Đình Chiểu...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#langMoModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chùa Bạch Vân -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq7.jpeg" alt="Chùa Bạch Vân" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Chùa Bạch Vân</h3>
+                            <p>Ngôi chùa lịch sử của ni giới Bến Tre, nơi lưu giữ nhiều giá trị văn hóa tâm linh và kiến
+                                trúc độc đáo...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#chuaBachVanModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Đình Phú Tự -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq8.jpeg" alt="Đình Phú Tự" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Đình Phú Tự</h3>
+                            <p>Di sản văn hóa nổi tiếng với kiến trúc độc đáo và cây Bạch Mai 300 năm tuổi, nơi ghi dấu
+                                lịch sử phương Nam...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#dinhPhuTuModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sân chim Vàm Hồ -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card animate__animated animate__fadeInUp">
+                        <div class="destination-img">
+                            <img src="images/tq9.jpeg" alt="Sân chim Vàm Hồ" class="img-fluid">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Sân chim Vàm Hồ</h3>
+                            <p>Thiên đường sinh thái với hơn 84 loài chim và đa dạng thực vật, nơi hòa mình vào thiên
+                                nhiên hoang dã...</p>
+                            <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#sanChimModal">
+                                Chi Tiết <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="lanVuongModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Khu du lịch Lan Vương</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq1.jpeg" alt="Lan Vương" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Khu du lịch Lan Vương tọa lạc tại ấp 2, xã Phú Thuận, Bến Tre là một điểm đến không thể
+                                bỏ qua khi du lịch xứ dừa. Với không gian rộng lớn, trong lành và cảnh quan thiên nhiên
+                                tuyệt đẹp, nơi đây đã trở thành điểm check-in yêu thích của giới trẻ và du khách gần xa.
+                            </p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Hoạt Động Nổi Bật</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Trải nghiệm chèo xuồng ba lá trên sông
+                                </li>
+                                <li><i class="fas fa-check text-success"></i> Tham gia các trò chơi dân gian như tát
+                                    mương bắt cá, mò cua</li>
+                                <li><i class="fas fa-check text-success"></i> Thử thách với trò đu dây văng và đi cầu
+                                    khỉ</li>
+                                <li><i class="fas fa-check text-success"></i> Khám phá vườn trái cây với nhiều loại đặc
+                                    sản</li>
+                                <li><i class="fas fa-check text-success"></i> Đạp xe dưới nước và các hoạt động thể thao
+                                    nước</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-utensils me-2"></i>Ẩm Thực Đặc Sắc</h4>
+                            <p>Du khách sẽ được thưởng thức những món ăn đặc trưng của miền Tây Nam Bộ như:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Cá lóc nướng trui</li>
+                                        <li><i class="fas fa-check text-success"></i> Bánh xèo hến</li>
+                                        <li><i class="fas fa-check text-success"></i> Lẩu mắm đặc sản</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Các loại trái cây theo mùa</li>
+                                        <li><i class="fas fa-check text-success"></i> Nước dừa tươi</li>
+                                        <li><i class="fas fa-check text-success"></i> Các món chế biến từ dừa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 7:00 - 17:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Giá vé:</strong> 50.000đ/người
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-car"></i>
+                                    <strong>Bãi đỗ xe:</strong> Miễn phí
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <strong>Liên hệ:</strong> 0839.183.764
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(128 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+
+                        <!-- Form bình luận -->
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="comments-list">
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar1.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Nguyễn Văn A</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">2 ngày trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Địa điểm rất đẹp và thú vị. Các hoạt động như chèo thuyền, tát
+                                    mương bắt cá rất vui. Nhân viên phục vụ nhiệt tình.</p>
+                            </div>
+
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar2.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Trần Thị B</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">1 tuần trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Không gian thoáng đãng, trong lành. Thích hợp cho gia đình đi
+                                    picnic cuối tuần. Tuy nhiên giá đồ ăn hơi cao.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Đạo Dừa -->
+    <div class="modal fade" id="daoDuaModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Di tích Đạo Dừa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq2.jpeg" alt="Đạo Dừa" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Di tích Đạo Dừa (Nam Quốc Phật) là một trong những di tích lịch sử văn hóa độc đáo của
+                                Bến Tre, nằm tại Cồn Phụng. Với diện tích khoảng 1.500m², nơi đây là điểm đến không thể
+                                bỏ qua khi khám phá vùng đất xứ dừa, mang đậm dấu ấn văn hóa và tín ngưỡng địa phương.
+                            </p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Điểm Nhấn Kiến Trúc</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Sân Rồng với 9 trụ cột chạm khắc hình rồng
+                                    tinh xảo</li>
+                                <li><i class="fas fa-check text-success"></i> Cổng chào và lối đi độc đáo</li>
+                                <li><i class="fas fa-check text-success"></i> Tháp cao và mô hình núi, hang động đặc sắc
+                                </li>
+                                <li><i class="fas fa-check text-success"></i> Lư hương lớn với mảnh vỡ sành sứ độc đáo
+                                </li>
+                                <li><i class="fas fa-check text-success"></i> Kiến trúc tổng thể mang đậm dấu ấn văn hóa
+                                    địa phương</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-history me-2"></i>Giá Trị Văn Hóa</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Di sản văn hóa tín ngưỡng</li>
+                                        <li><i class="fas fa-check text-success"></i> Nơi hành lễ của tín đồ Đạo Dừa
+                                        </li>
+                                        <li><i class="fas fa-check text-success"></i> Điểm du lịch tâm linh</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Kiến trúc nghệ thuật độc đáo</li>
+                                        <li><i class="fas fa-check text-success"></i> Điểm check-in nổi tiếng</li>
+                                        <li><i class="fas fa-check text-success"></i> Bảo tồn văn hóa địa phương</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 6:00 - 18:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Giá vé:</strong> 30.000đ/người
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map"></i>
+                                    <strong>Địa điểm:</strong> Cồn Phụng
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Chụp ảnh:</strong> Miễn phí
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.7</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(95 đánh giá)</span>
+                            </div>
+                            <div class="your-rating" data-target="daoDua">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+
+                        <!-- Form bình luận -->
+                        <form class="comment-form mb-4" data-target="daoDua">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="comments-list">
+                            <!-- Các bình luận mẫu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Phú An Khang -->
+    <div class="modal fade" id="phuAnKhangModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Khu du lịch Phú An Khang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq3.jpeg" alt="Phú An Khang" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Khu du lịch Phú An Khang tọa lạc tại số 319 ấp Phú Lợi, xã Bình Phú, với diện tích hơn 3
+                                hecta. Đây là một thiên đường nghỉ dưỡng yên bình, hoàn toàn tách biệt với nhịp sống ồn
+                                ào của thành thị, mang đến không gian trong lành và gần gũi với thiên nhiên.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Hoạt Động Nổi Bật</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Trải nghiệm làm nông dân với các hoạt động
+                                    đồng quê</li>
+                                <li><i class="fas fa-check text-success"></i> Tổ chức team building và dã ngoại</li>
+                                <li><i class="fas fa-check text-success"></i> Tham gia các cuộc thi gói bánh truyền
+                                    thống</li>
+                                <li><i class="fas fa-check text-success"></i> Khám phá vườn trái cây trong nhà kính</li>
+                                <li><i class="fas fa-check text-success"></i> Chèo xuồng và các hoạt động dưới nước</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-utensils me-2"></i>Trải Nghiệm Độc Đáo</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Học làm bánh dân gian</li>
+                                        <li><i class="fas fa-check text-success"></i> Thu hoạch trái cây theo mùa</li>
+                                        <li><i class="fas fa-check text-success"></i> Câu cá giải trí</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Tham quan vườn rau sạch</li>
+                                        <li><i class="fas fa-check text-success"></i> Trải nghiệm ẩm thực địa phương
+                                        </li>
+                                        <li><i class="fas fa-check text-success"></i> Chụp ảnh check-in đẹp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 7:30 - 17:30
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Giá vé:</strong> 40.000đ/người
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-users"></i>
+                                    <strong>Nhóm:</strong> Giảm giá cho đoàn
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-parking"></i>
+                                    <strong>Bãi đỗ xe:</strong> Rộng rãi, miễn phí
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.3</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(76 đánh giá)</span>
+                            </div>
+                            <div class="your-rating" data-target="phuAnKhang">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+
+                        <!-- Form bình luận -->
+                        <form class="comment-form mb-4" data-target="phuAnKhang">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="comments-list">
+                            <!-- Các bình luận mẫu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bảo tàng Bến Tre -->
+    <div class="modal fade" id="baoTangModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bảo tàng Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq4.jpeg" alt="Bảo tàng Bến Tre" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Bảo tàng Bến Tre tọa lạc tại số 146 đường Hùng Vương, trung tâm thành phố, với khuôn viên
+                                rộng 13.000m². Công trình mang đậm phong cách kiến trúc Pháp cổ điển với những khung cửa
+                                hình vòm đặc trưng, gồm 1 tầng trệt và 1 tầng lầu, tổng diện tích 474m².</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Điểm Nhấn</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Kiến trúc Pháp cổ điển độc đáo</li>
+                                <li><i class="fas fa-check text-success"></i> Khu trưng bày hiện vật cách mạng trong nhà
+                                </li>
+                                <li><i class="fas fa-check text-success"></i> Khu trưng bày ngoài trời với diện tích
+                                    288m²</li>
+                                <li><i class="fas fa-check text-success"></i> Bộ sưu tập hiện vật lịch sử quý giá</li>
+                                <li><i class="fas fa-check text-success"></i> Nơi diễn ra nhiều sự kiện lịch sử quan
+                                    trọng</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-history me-2"></i>Giá Trị Lịch Sử</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Di tích lịch sử cách mạng</li>
+                                        <li><i class="fas fa-check text-success"></i> Nơi lưu giữ kỷ vật chiến tranh
+                                        </li>
+                                        <li><i class="fas fa-check text-success"></i> Điểm giáo dục truyền thống</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Trưng bày hiện vật gốc</li>
+                                        <li><i class="fas fa-check text-success"></i> Tư liệu lịch sử quý giá</li>
+                                        <li><i class="fas fa-check text-success"></i> Điểm tham quan văn hóa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 7:30 - 17:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Giá vé:</strong> Miễn phí
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map"></i>
+                                    <strong>Địa chỉ:</strong> 146 Hùng Vương
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Chụp ảnh:</strong> Được phép
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.6</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(82 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar1.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Nguyễn Văn A</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">2 ngày trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Bảo tàng rất đẹp và giàu giá trị lịch sử. Tôi đã học được nhiều
+                                    điều thú vị về Bến Tre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cồn Phụng -->
+    <div class="modal fade" id="conPhungModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cồn Phụng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq5.jpeg" alt="Cồn Phụng" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Cồn Phụng là khu du lịch sinh thái tiêu biểu của vùng Đồng bằng sông Cửu Long, nổi tiếng
+                                với cảnh quan thiên nhiên tươi đẹp và những trải nghiệm văn hóa độc đáo. Nơi đây là điểm
+                                đến lý tưởng để khám phá đời sống sông nước và văn hóa miền Tây Nam Bộ.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Hoạt Động Nổi Bật</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Tham quan Di tích Đạo Dừa</li>
+                                <li><i class="fas fa-check text-success"></i> Trải nghiệm câu cá, tát mương</li>
+                                <li><i class="fas fa-check text-success"></i> Chèo thuyền khám phá sông nước</li>
+                                <li><i class="fas fa-check text-success"></i> Tham quan vườn trái cây</li>
+                                <li><i class="fas fa-check text-success"></i> Tắm sông giải nhiệt</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-leaf me-2"></i>Điểm Đặc Sắc</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Cảnh quan sông nước hữu tình</li>
+                                        <li><i class="fas fa-check text-success"></i> Vườn cây ăn trái sum suê</li>
+                                        <li><i class="fas fa-check text-success"></i> Ẩm thực đặc sản</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Homestay miệt vườn</li>
+                                        <li><i class="fas fa-check text-success"></i> Làng nghề truyền thống</li>
+                                        <li><i class="fas fa-check text-success"></i> Văn hóa địa phương</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> Cả ngày
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Vé tham quan:</strong> 30.000đ
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ship"></i>
+                                    <strong>Đò:</strong> 10.000đ/lượt
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-home"></i>
+                                    <strong>Lưu trú:</strong> Có homestay
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.8</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(156 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar2.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Trần Thị B</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">1 tuần trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Cảnh quan tuyệt đẹp, không khí trong lành. Rất thích hợp cho
+                                    chuyến du lịch cuối tuần.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lăng mộ Nguyễn Đình Chiểu -->
+    <div class="modal fade" id="langMoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Khu di tích lăng mộ Nguyễn Đình Chiểu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq6.jpeg" alt="Lăng mộ Nguyễn Đình Chiểu" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Khu di tích lăng mộ Nguyễn Đình Chiểu là nơi an nghỉ của vị danh nhân văn hóa, nhà thơ
+                                yêu nước, thầy thuốc nhân đức của dân tộc. Được xây dựng năm 1972, khu di tích có diện
+                                tích 1.5 hecta với quần thể kiến trúc độc đáo, là điểm đến tâm linh và giáo dục truyền
+                                thống quan trọng.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-landmark me-2"></i>Công Trình Kiến Trúc</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Cổng tam quan tráng lệ</li>
+                                <li><i class="fas fa-check text-success"></i> Đền thờ cũ và đền thờ mới</li>
+                                <li><i class="fas fa-check text-success"></i> Nhà bia tưởng niệm</li>
+                                <li><i class="fas fa-check text-success"></i> Lăng mộ được bảo tồn nguyên vẹn</li>
+                                <li><i class="fas fa-check text-success"></i> Khuôn viên cây xanh thoáng đãng</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-calendar-alt me-2"></i>Lễ Hội Truyền Thống
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Lễ giỗ hằng năm (1/7)</li>
+                                        <li><i class="fas fa-check text-success"></i> Hóa trang nhân vật Lục Vân Tiên
+                                        </li>
+                                        <li><i class="fas fa-check text-success"></i> Thi mâm cơm ngày giỗ</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Đấu cờ tướng</li>
+                                        <li><i class="fas fa-check text-success"></i> Trò chơi dân gian</li>
+                                        <li><i class="fas fa-check text-success"></i> Hoạt động văn nghệ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 7:00 - 17:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Vé vào cửa:</strong> Miễn phí
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <strong>Lễ hội:</strong> 1/7 âm lịch
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Chụp ảnh:</strong> Được phép
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm phần đánh giá và bình luận -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.7</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(94 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar3.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Lê Văn C</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">3 ngày trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Di tích lịch sử ý nghĩa, nơi tưởng nhớ danh nhân văn hóa. Cảnh
+                                    quan được bảo tồn rất tốt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chùa Bạch Vân -->
+    <div class="modal fade" id="chuaBachVanModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chùa Bạch Vân</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq7.jpeg" alt="Chùa Bạch Vân" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Chùa Bạch Vân (Bạch Vân Ni Tự) được xây dựng từ năm 1954, là ngôi chùa tiêu biểu của ni
+                                giới tỉnh Bến Tre. Trải qua gần 60 năm phát triển, chùa không chỉ là trung tâm Phật sự
+                                mà còn là nơi ghi dấu nhiều giá trị lịch sử và nhân văn sâu sắc.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-landmark me-2"></i>Công Trình Kiến Trúc</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Cổng tam quan trang nghiêm</li>
+                                <li><i class="fas fa-check text-success"></i> Chánh điện và Sala mới</li>
+                                <li><i class="fas fa-check text-success"></i> Nhà thờ Tổ trang nghiêm</li>
+                                <li><i class="fas fa-check text-success"></i> Trai đường rộng rãi</li>
+                                <li><i class="fas fa-check text-success"></i> Tượng Phật Hòa Bình bằng ngọc bích</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-history me-2"></i>Giá Trị Văn Hóa</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Trung tâm Phật giáo ni giới</li>
+                                        <li><i class="fas fa-check text-success"></i> Di tích lịch sử văn hóa</li>
+                                        <li><i class="fas fa-check text-success"></i> Nơi nuôi dưỡng trẻ mồ côi</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Điểm du lịch tâm linh</li>
+                                        <li><i class="fas fa-check text-success"></i> Kiến trúc Phật giáo đặc sắc</li>
+                                        <li><i class="fas fa-check text-success"></i> Nơi tổ chức lễ hội Phật giáo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 5:00 - 20:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Vào cửa:</strong> Miễn phí
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-praying-hands"></i>
+                                    <strong>Lễ chính:</strong> Rằm, mồng một
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Chụp ảnh:</strong> Được phép
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trong modal Chùa Bạch Vân -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.9</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(108 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar1.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Phạm Thị D</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">5 ngày trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Chùa rất đẹp và thanh tịnh. Không gian thoáng đãng, phù hợp cho
+                                    việc
+                                    tham quan và cầu nguyện.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Đình Phú Tự -->
+    <div class="modal fade" id="dinhPhuTuModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đình Phú Tự</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq8.jpeg" alt="Đình Phú Tự" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Đình Phú Tự là di sản văn hóa nổi tiếng thờ Thành Hoàng Bổn Cảnh, với diện tích 1.000m²
+                                theo hình chữ Tam. Từ một ngôi đình nhỏ bằng tre lá, nơi đây đã trở thành điểm đến văn
+                                hóa tâm linh quan trọng của Bến Tre.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-landmark me-2"></i>Kiến Trúc Độc Đáo</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Ba gian chính: Nhà thính, Võ ca, Nhà chính
+                                </li>
+                                <li><i class="fas fa-check text-success"></i> Cây Bạch Mai 300 năm tuổi</li>
+                                <li><i class="fas fa-check text-success"></i> Kiến trúc hình chữ Tam</li>
+                                <li><i class="fas fa-check text-success"></i> Điêu khắc và chạm trổ tinh xảo</li>
+                                <li><i class="fas fa-check text-success"></i> Không gian thờ tự trang nghiêm</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-history me-2"></i>Giá Trị Văn Hóa</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Di tích lịch sử văn hóa</li>
+                                        <li><i class="fas fa-check text-success"></i> Nơi thờ Thành Hoàng Bổn Cảnh</li>
+                                        <li><i class="fas fa-check text-success"></i> Điểm sinh hoạt văn hóa</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Lễ hội truyền thống</li>
+                                        <li><i class="fas fa-check text-success"></i> Kiến trúc nghệ thuật</li>
+                                        <li><i class="fas fa-check text-success"></i> Truyền thuyết dân gian</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Giờ mở cửa:</strong> 7:00 - 17:00
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Vào cửa:</strong> Miễn phí
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <strong>Lễ hội:</strong> Âm lịch
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Chụp ảnh:</strong> Được phép
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trong modal Đình Phú Tự -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(75 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar2.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Hoàng Văn E</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">1 tuần trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Kiến trúc độc đáo và cây Bạch Mai cổ thụ rất ấn tượng. Nơi đây
+                                    thực sự
+                                    là một di sản văn hóa quý giá.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sân chim Vàm Hồ -->
+    <div class="modal fade" id="sanChimModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sân chim Vàm Hồ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tq9.jpeg" alt="Sân chim Vàm Hồ" class="img-fluid mb-4">
+                    <div class="destination-details">
+                        <div class="overview mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-info-circle me-2"></i>Tổng Quan</h4>
+                            <p>Sân chim Vàm Hồ nằm giữa hai xã Mỹ Hoà và Tân Xuân, huyện Ba Tri, là khu bảo tồn thiên
+                                nhiên với hơn 84 loài chim và đa dạng thực vật ngập mặn. Từ năm 1986, nơi đây đã trở
+                                thành điểm đến sinh thái độc đáo của Bến Tre.</p>
+                        </div>
+
+                        <div class="activities mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-dove me-2"></i>Đa Dạng Sinh Học</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Hơn 84 loài chim các loại</li>
+                                <li><i class="fas fa-check text-success"></i> Hệ thực vật ngập mặn phong phú</li>
+                                <li><i class="fas fa-check text-success"></i> Cây đước và dừa nước tầng cao</li>
+                                <li><i class="fas fa-check text-success"></i> Lau sậy và cóc kèn tầng thấp</li>
+                                <li><i class="fas fa-check text-success"></i> Hệ sinh thái đặc trưng vùng ngập mặn</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties mb-4">
+                            <h4 class="section-subtitle"><i class="fas fa-leaf me-2"></i>Trải Nghiệm Độc Đáo</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Ngắm chim hoang dã</li>
+                                        <li><i class="fas fa-check text-success"></i> Dạo chơi trong rừng</li>
+                                        <li><i class="fas fa-check text-success"></i> Nghỉ ngơi trên võng</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-success"></i> Chụp ảnh thiên nhiên</li>
+                                        <li><i class="fas fa-check text-success"></i> Nghe chim hót</li>
+                                        <li><i class="fas fa-check text-success"></i> Khám phá sinh thái</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="practical-info">
+                            <h4 class="section-subtitle"><i class="fas fa-map-marker-alt me-2"></i>Thông Tin Thực Tế
+                            </h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <strong>Thời gian:</strong> Sáng sớm tốt nhất
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Vé tham quan:</strong> Liên hệ HDV
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Máy ảnh:</strong> Nên mang ống kính tele
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map"></i>
+                                    <strong>Địa điểm:</strong> Huyện Ba Tri
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trong modal Sân chim Vàm Hồ -->
+                <div class="modal-footer d-block">
+                    <div class="review-section mb-4">
+                        <h4 class="section-subtitle"><i class="fas fa-star me-2"></i>Đánh Giá</h4>
+                        <div class="rating-area text-center mb-3">
+                            <div class="current-rating mb-2">
+                                <span class="rating-value">4.7</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(89 đánh giá)</span>
+                            </div>
+                            <div class="your-rating">
+                                <p class="mb-2">Đánh giá của bạn:</p>
+                                <div class="rate-stars">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <h4 class="section-subtitle"><i class="fas fa-comments me-2"></i>Bình Luận</h4>
+                        <form class="comment-form mb-4">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+
+                        <div class="comments-list">
+                            <!-- Bình luận mẫu -->
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <img src="images/avatar3.jpg" alt="User" class="comment-avatar">
+                                    <div class="comment-info">
+                                        <h5>Nguyễn Thị F</h5>
+                                        <div class="comment-meta">
+                                            <span class="comment-date">4 ngày trước</span>
+                                            <div class="comment-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comment-text">Thiên nhiên hoang dã tuyệt đẹp. Được ngắm nhiều loài chim quý
+                                    hiếm và
+                                    khám phá hệ sinh thái đặc trưng vùng ngập mặn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp">
+                    <div class="footer-info">
+                        <h3 class="footer-brand">
+                            <i class="fas fa-leaf me-2"></i>
+                            Bến Tre Tourism
+                        </h3>
+                        <p class="mt-3">Khám phá vẻ đẹp của xứ dừa Bến Tre qua những trải nghiệm độc đáo và ấn tượng.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="https://www.facebook.com/share/163uaHinHa/?mibextid=wwXIfr" target="_blank"
+                                class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/xuyn.oyt_?igsh=dmJ4MWg4d244dnRy&utm_source=qr"
+                                target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:myxuyen230421@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Liên Hệ</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Ấp An Nhơn, xã Vĩnh An, huyện Ba Tri, tỉnh Bến Tre</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <p><a href="tel:0839183764">0839 183 764</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><a href="mailto:myxuyen230421@gmail.com">myxuyen230421@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="footer-newsletter">
+                        <h4 class="footer-title">Đăng Ký Nhận Tin</h4>
+                        <p>Đăng ký để nhận những thông tin mới nhất về du lịch Bến Tre</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email của bạn">
+                                <button class="btn btn-subscribe" type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5 pt-4 border-top">
+                <p>&copy; 2025 Bến Tre Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Rating & Comment Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Xử lý đánh giá sao cho tất cả các modal
+            const modals = document.querySelectorAll('.modal');
+
+            modals.forEach(modal => {
+                const rateStars = modal.querySelectorAll('.rate-stars i');
+                let selectedRating = 0;
+
+                rateStars.forEach(star => {
+                    star.addEventListener('mouseover', function () {
+                        const rating = this.dataset.rating;
+                        updateStars(modal, rating);
+                    });
+
+                    star.addEventListener('mouseout', function () {
+                        updateStars(modal, selectedRating);
+                    });
+
+                    star.addEventListener('click', function () {
+                        selectedRating = this.dataset.rating;
+                        updateStars(modal, selectedRating);
+                        modal.querySelector('.your-rating').setAttribute('data-rating', selectedRating);
+                    });
+                });
+
+                // Xử lý form bình luận cho mỗi modal
+                const commentForm = modal.querySelector('.comment-form');
+                if (commentForm) {
+                    commentForm.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        const rating = modal.querySelector('.your-rating').getAttribute('data-rating');
+                        const comment = this.querySelector('textarea').value;
+
+                        if (!rating) {
+                            alert('Vui lòng chọn số sao đánh giá!');
+                            return;
+                        }
+
+                        if (!comment.trim()) {
+                            alert('Vui lòng nhập nội dung bình luận!');
+                            return;
+                        }
+
+                        // Tạo và thêm bình luận mới
+                        const newComment = createCommentElement(comment, rating);
+                        const commentsList = modal.querySelector('.comments-list');
+                        commentsList.insertBefore(newComment, commentsList.firstChild);
+
+                        // Reset form
+                        this.reset();
+                        selectedRating = 0;
+                        updateStars(modal, 0);
+                        modal.querySelector('.your-rating').removeAttribute('data-rating');
+
+                        // Thông báo thành công
+                        alert('Cảm ơn bạn đã đánh giá!');
+                    });
+                }
+            });
+
+            // Hàm cập nhật hiển thị sao
+            function updateStars(modal, rating) {
+                const stars = modal.querySelectorAll('.rate-stars i');
+                stars.forEach(star => {
+                    const starRating = star.dataset.rating;
+                    if (starRating <= rating) {
+                        star.classList.remove('far');
+                        star.classList.add('fas');
+                    } else {
+                        star.classList.remove('fas');
+                        star.classList.add('far');
+                    }
+                });
+            }
+
+            // Hàm tạo phần tử bình luận mới
+            function createCommentElement(comment, rating) {
+                const commentHtml = `
+                    <div class="comment-item animate__animated animate__fadeInDown">
+                        <div class="comment-header">
+                            <img src="images/avatar3.jpg" alt="User" class="comment-avatar">
+                            <div class="comment-info">
+                                <h5>Khách</h5>
+                                <div class="comment-meta">
+                                    <span class="comment-date">Vừa xong</span>
+                                    <div class="comment-rating">
+                                        ${createStars(rating)}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="comment-text">${comment}</p>
+                    </div>
+                `;
+
+                const div = document.createElement('div');
+                div.innerHTML = commentHtml.trim();
+                return div.firstChild;
+            }
+
+            // Hàm tạo HTML cho sao đánh giá
+            function createStars(rating) {
+                let stars = '';
+                for (let i = 1; i <= 5; i++) {
+                    stars += `<i class="fas fa-star${i <= rating ? '' : '-o'}"></i>`;
+                }
+                return stars;
+            }
+        });
+    </script>
+</body>
+
+</html>
